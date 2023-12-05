@@ -7,11 +7,11 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template: 1fr 3fr/1fr 3fr;
+  grid-template: 1.5fr 3fr/1fr 3fr;
 }
 
 .sidebar {
-  width: clamp(250px, 25vw, 500px);
+  width: min(250px, 40vw);
   background: #33e;
   color: white;
   position: relative;
@@ -24,9 +24,8 @@ body {
 
 .sidebar .logo {
   background: crimson;
-  height: 150px;
-  width: 250px;
-  align-self: start;
+  height: 50px;
+  width: 150px;
 }
 
 .sidebar ul {
@@ -39,12 +38,19 @@ body {
 }
 
 .header {
+  position: relative;
   background: #fff;
+  padding: 10px 30px;
   grid-area: 1/2/2/3;
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.header > * {
+  background: crimson;
 }
 
 .header #search-bar {
@@ -62,7 +68,22 @@ body {
   align-self: right;
 }
 
+.header #user-info {
+  position: relative;
+  right: 0;
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  justify-items: end;
+}
+
+.profile-picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: yellow;
+}
+
 .content {
-  background: magenta;
+  background: skyblue;
   grid-area: 2/2/3/3;
 }/*# sourceMappingURL=style.css.map */
