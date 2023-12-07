@@ -264,6 +264,10 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.content .project {
+  height: 100px; // attempt to fix .project size
+}
+
 .content .project * {
   padding: 0 30px;
   height: min-content;
