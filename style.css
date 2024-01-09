@@ -10,8 +10,8 @@ body {
 
 .dashboard-container {
   background: #ccc;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   display: grid;
   grid-template: 1fr 3fr/1fr 6fr;
 }
